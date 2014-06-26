@@ -37,10 +37,9 @@ A student should be able to:
     * The deliverable is the knowledge gained, not production code
     * Implementing production tests/code will now go faster because you understand problem
 
-## [Demo](https://github.com/gSchool/http_basics_with_sinatra_demo)
+## Exercise
 
 * Implement an endpoint `/`, also known as the root of the site
-    * Show how to use [rerun](https://github.com/alexch/rerun/) for automatic reloading of site after first commit. `gem install rerun` and `rerun 'ruby app.rb'`
     * Displays a page with a link to the items page found at `/items`.
 
 * Implement the `/items` endpoint
@@ -51,8 +50,6 @@ A student should be able to:
     `/item/1`.
 
 * Talk about what localhost is and what a hosts file is
-
-## Homework
 
 Implement solutions to the following exercises in addition to the two demo exercises above.
 You should create a new, well named directory in your gSchool working directory and initialize a
