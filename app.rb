@@ -1,16 +1,34 @@
 require "sinatra/base"
-require "sinatra/reloader"
+# require "sinatra/reloader"
 
 class MyApp < Sinatra::Application
-  register Sinatra::Reloader
+#  register Sinatra::Reloader
+
 
   def initialize
     super
-    @items = []
+    @items = ["Apples", "Bananas", "Cucumbers", "Dill" ]
   end
 
+
+
   get "/" do
-    "items length: #{@items.length}"
+    erb :root
+  end
+
+  get "/steve" do
+    erb :worked
+  end
+
+
+  get "/items" do
+    @things = ["A", "B", "C"]
+    erb :items
+  end
+
+  get "/items/:blah" do
+    @id = params[:blah].to_i
+    erb :item
   end
 
   run! if app_file == $0

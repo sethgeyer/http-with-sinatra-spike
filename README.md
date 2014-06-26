@@ -41,15 +41,15 @@ A student should be able to:
 
 Simply run `bundle` to get sinatra installed. To run your application type `rackup` and that's it!
 
-* Implement an endpoint `/`, also known as the root of the site
+X* Implement an endpoint `/`, also known as the root of the site
     * Displays a page with a link to the items page found at `/items`.
 
 * Implement the `/items` endpoint
-    * Shows a web page with a list (`ul`) of 3 menu items on it. Each item (`li`) displays a name.
-    * Shows a link to the `/items/new` endpoint at the top of the page.
-    * Shows a "Show Item" link for each item in the list. The link should link to the
-    `/item/[item id]` endpoint. For example, for item with id 1, the href of the link should be
-    `/item/1`.
+    X* Shows a web page with a list (`ul`) of 3 menu items on it. Each item (`li`) displays a name.
+    X* Shows a link to the `/items/new` endpoint at the top of the page.
+    X* Shows a "Show Item" link for each item in the list. The link should link to the
+    X`/item/[item id]` endpoint. For example, for item with id 1, the href of the link should be
+    X`/item/1`.
 
 * Talk about what localhost is and what a hosts file is
 

@@ -1,0 +1,17 @@
+Items page
+
+<a href="/items/new">Add a New Item</a>
+
+<ul>
+
+    <%@items.each_with_index do |item, index|%>
+    <li><a href="/items/<%=index%>"><%=item%></a></li>
+    <%end%>
+ </ul>
+
+
+<form href="/steve" method="GET">
+  <label for="vegetable">Search for </label>
+  <input id="vegetable">
+  <button href="/steve">Search</button>
+</form>
