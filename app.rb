@@ -1,9 +1,7 @@
 require "sinatra"
 require "sinatra/reloader"
 
-items = [
-  {:something => "blah"}
-]
+items = []
 
 get "/" do
   "items length: #{items.length}"
