@@ -2,9 +2,7 @@ require "sinatra/base"
 require "sinatra/reloader"
 
 class MyApp < Sinatra::Application
-  configure :development do
-    register Sinatra::Reloader
-  end
+  register Sinatra::Reloader
 
   def initialize
     super
