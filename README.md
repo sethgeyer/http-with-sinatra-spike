@@ -39,7 +39,7 @@ A student should be able to:
 
 ## Exercise
 
-Simply run `bundle` to get sinatra installed. To run your application type `ruby app.rb` and that's it!
+Simply run `bundle` to get sinatra installed. To run your application type `rackup` and that's it!
 
 * Implement an endpoint `/`, also known as the root of the site
     * Displays a page with a link to the items page found at `/items`.
