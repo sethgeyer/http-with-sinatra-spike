@@ -1,6 +1,6 @@
 require "sinatra/base"
 
-class MyApp < Sinatra::Base
+class MyApp < Sinatra::Application
   def initialize
     super
     @items = []
