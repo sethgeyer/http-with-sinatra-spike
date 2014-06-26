@@ -19,11 +19,6 @@ A student should be able to:
 * Understand concept of localhost and a hosts file
 * Create eRb templates to render HTML
 
-## XP practices learned
-
-* Spikes
-* Baby steps
-
 ## Tech skills learned
 
 * Sinatra
