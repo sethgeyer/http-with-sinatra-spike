@@ -1,0 +1,15 @@
+<h1>This is the SHOW Page for an individual item</h1>
+<hr />
+<h2>I got here from a link to /items/<i>item_id</i>.  </h2>
+The above link ran a GET request to my <b>App.rb</b> file which responded w/ the <b>show.erb</b> view file.
+
+<hr />
+
+<p> This is the information I'm gathering from the instance variable that was passed in.</p>
+
+<%="Item ID: #{@id}"%><br>
+<%="Item Name: #{@items[@id]}"%><br>
+<br>
+<a href=<%="/items/#{@id}/edit"%>>Edit</a> &nbsp;&nbsp;&nbsp;<-- aka: sends a GET request to "/items/<%=@id%>/edit" in the App file.
+
+<hr />

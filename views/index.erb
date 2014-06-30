@@ -1,0 +1,28 @@
+
+<h1>This is the INDEX Page for items</h1>
+<hr />
+<h2>I got here from a link to /items.  </h2>
+The above link ran a GET request to my <b>App.rb</b> file which responded w/ the <b>index</b> view file.
+
+<hr />
+
+<p> This is the information I'm gathering from the instance variable that was passed in.  The links below will send a GET request to "/items/id" in your app file.</p>
+
+<ul>
+    <%@items.each_with_index do |item, index|%>
+    <li><a href="/items/<%=index%>"><%=item%></a></li>
+    <%end%>
+ </ul>
+
+<br>
+
+<a href="/item/new">Add a New Item</a> <--aka: a GET request to "/items/new" in your app file.
+<br>
+
+<form>
+  <label for="vegetable">Search for </label>
+  <input id="vegetable"name="filter">
+  <button href="/steve">Search</button>
+</form>
+
+<hr />

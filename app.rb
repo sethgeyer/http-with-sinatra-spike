@@ -11,24 +11,49 @@ class MyApp < Sinatra::Application
   end
 
 
-
+  #ROOT
   get "/" do
     erb :root
   end
 
-  get "/steve" do
-    erb :worked
-  end
-
-
+  #INDEX
   get "/items" do
     @things = ["A", "B", "C"]
-    erb :items
+    erb :index
   end
 
-  get "/items/:blah" do
-    @id = params[:blah].to_i
-    erb :item
+  #NEW
+  get "/item/new" do
+    @id = nil
+    erb :new
+  end
+
+  #SHOW
+  get "/items/:array_number" do
+    @id = params[:array_number].to_i
+    erb :show
+  end
+
+  #EDIT
+  get "/items/:array_number/edit" do
+    @id = params[:array_number].to_i
+    erb :edit
+  end
+
+  #UPDATE
+  put "/items/:id" do
+    id = params[:id]
+    veggie_name = params[:veggie_name]
+    @items[id.to_i] = veggie_name
+    erb :index
+  end
+
+
+  #CREATE
+  post "/items/new" do
+    veggie_name = params[:veggie_name]
+    @items << veggie_name
+    erb :index
   end
 
   run! if app_file == $0

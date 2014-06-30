@@ -1,0 +1,23 @@
+<h1>This is the EDIT Page for an individual item</h1>
+<hr />
+<h2>I got here from a link to /items/<i>item_id</i>/edit.  </h2>
+The above link ran a GET request to my <b>App.rb</b> file which responded w/ the <b>edit.erb</b> view file.
+
+<hr />
+
+<p> The name in the input field is the default value that was passed in as an instance variable </p>
+
+
+<h4>Edit Item Information</h4>
+<form method="POST" action="/items/<%=@id%>">
+<%"Item ID: #{@id}"%>
+<label for="name_field">New Name:</label>
+<input id="name_field" name="veggie_name" value="<%=@items[@id]%>">
+<br><br>
+<button>Save</button>
+<a href="/items/<%=@id%>">Cancel</a>
+</form>
+<br>
+
+<hr />
+

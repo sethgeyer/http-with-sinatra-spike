@@ -1,0 +1,19 @@
+<h1>This is the ADD Page for adding a new individual item</h1>
+<hr />
+<h2>I got here from a link to /item/new.  </h2>
+The above link ran a GET request to my <b>App.rb</b> file which responded w/ the <b>new.erb</b> view file.
+
+<hr />
+
+<h4>Create New Item</h4>
+<form method="POST" action="/items/new">
+  <label for="name_field">Name:</label>
+  <input id="name_field" name="veggie_name">
+  <br><br>
+  <button>Save</button>
+  <a href="/items">Cancel</a>
+
+</form>
+<br>
+
+<hr />
